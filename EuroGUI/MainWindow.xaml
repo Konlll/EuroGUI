@@ -1,0 +1,31 @@
+﻿<Window x:Class="EuroGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EuroGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <DataGrid Grid.Row="0" x:Name="dgSong" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Top" Width="700" Margin="5" Height="200" SelectionMode="Single"></DataGrid>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Top" Margin="10">
+            <Button Content="4. feladat" Height="50" x:Name="btnTask4" Click="btnTask4_Click" />
+            <Button Content="5. feladat" Height="50" x:Name="btnTask5" Click="btnTask5_Click" Margin="10,0,0,0" />
+            <Button Content="6. feladat" Height="50" x:Name="btnTask6" Click="btnTask6_Click" Margin="10,0,0,0" />
+            <TextBox x:Name="txtName" Width="200" Margin="120,0,0,0" />
+            <ListBox x:Name="lbResults" Width="200" Height="50" />
+            <Button Content="7. feladat" Height="50" x:Name="btnTask7" Click="btnTask7_Click" Margin="10,0,0,0" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" VerticalAlignment="Top" Margin="10">
+            <Label Content="Verseny dátuma" VerticalAlignment="Center" x:Name="lbDate" />
+            <Button Content="8. feladat" Height="50" x:Name="btnTask8" Click="btnTask8_Click" Margin="10,0,0,0" />
+        </StackPanel>
+    </Grid>
+</Window>
